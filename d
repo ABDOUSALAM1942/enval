@@ -88,3 +88,18 @@ margin-top: 10%;
       </tbody>
     </table>
   </div>
+
+
+  
+  cercle ferme
+  <div class="col-md-6" style="margin-top: -200px;">
+    <div class="progress yellow ">
+      <span class="progress-left">
+                      <span class="progress-bar"></span>
+      </span>
+      <span class="progress-right">
+                      <span class="progress-bar"></span>
+      </span>
+      <div class="progress-value">91%</div>
+    </div>
+</div>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/boostrap.min.css">
+  <link href=" bootstrap / css/ bootstrap .min .css" rel="stylesheet ">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid d-flex px-0">
+    <!-- <div class="container-fluid px-0" id="cont0" style="width: 250px; background-color: green; "> -->
+      <div class="container px-0" style="width: 250px;height:78rem; font-size: 14px;  background-color:white;" id="content1">
+        <!-- col-md-4  -->
+        <div class="d-flex flex-column align-items-sm-start  text-white"id="side"  style="background-color:white;">
+          <div>
+            <img class=" d-none d-lg-block" src="images/logo_env.png" alt=""
+              style="height: 180px;width: 250px; padding: 0;">
+              <!-- ;margin-right: 2px;margin: 8%;margin-left: -15%; -->
+        </div>
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link align-middle px-0 text-dark">
+                <img src="images/dashboard.png" class="p-3" style="width: 60px;" alt=""><span
+                  class="md-2 d-none d-lg-inline">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                <img src="images/volant.png" class="p-3" style="width: 60px;" alt=""> <span
+                  class="md-2 d-none d-lg-inline">Facture</span> </a>
+            </li>
+            <li>
+              <a href="commande.html" class="nav-link px-0 align-middle text-dark">
+                <img src="images/taxi.png" class="p-3" style="width: 60px;" alt=""> <span
+                  class="md-2 d-none d-lg-inline">Commande</span></a>
+            </li>
+            <li>
+              <a href="suivi.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                <img src="images/panier.png" class="p-3" style="width: 60px;" alt=""> <span
+                  class="md-2 d-none d-lg-inline">Suivi</span></a>
+            </li>
+            <li>
+              <a href="serviceclient.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                <img src="images/message.png" class="p-3" style="width: 60px;" alt=""><span
+                  class="md-2 d-none d-lg-inline">Service Client</span> </a>
+            </li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <li>
+              <a href="#" class="nav-link px-0 align-middle text-dark">
+                <img src="images/parametres.png" class="p-3" style="width: 60px;" alt=""><span
+                  class="md-2 d-none d-lg-inline">Paramètres Compte</span> </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-0 align-middle text-dark">
+                <img src="images/deconnexion.png" class="p-3" style="width: 60px;" alt=""><span
+                  class="md-2 d-none d-lg-inline">Déconnexion</span> </a>
+            </li>
+          </ul>
+          <hr>
+  
+        </div>
+      </div>
+    <!-- </div> -->
+  
+    <!-- nav et chart -->
+    <div class="container-fluid px-0">
+  
+      <div class="container-fluid">
+  
+     
+        <!-- style="width: 100%;margin-right: 20%;" -->
+        <nav class="navbar navbar-dark bg-light d-flex px-0" style="height: 110px;width:100%; ">
+          <a href="#content1">
+            <i class="bi bi-list  d-sm-block d-md-none" style="font-size: 2rem;" id="menu1"></i>
+          </a>
+          
+           
+<!-- script -->
+
+<!-- <script>
+
+let togg1 = document.getElementById("menu1");
+let d2 = document.getElementById("menu");
+let d1 = document.getElementById("content1");
+togg1.addEventListener("click", () => {
+  if((getComputedStyle(d2).display) && (getComputedStyle(d1).display) != "none"){
+    d2.style.display = "none";
+    d1.style.display = "none";
+  } else {
+    d2.style.display = "block";
+    d1.style.display = "block";
+  }
+})
+
+</script> -->
+
+
+<!-- script -->
+          <!-- width: 1700px; -->
+          <div class="d-flex" id="right_element" style="margin-right: 5rem;">
+   
+            <img src="images/notificatin.jpg" class="" alt=""
+              style="height: 45px;margin-top: 10px;margin-right: 2rem;">
+            <img src="images/b.png" class="rounded  px-0 m-0" alt="" style="width: 5rem;">
+         
+        </div>
+        </nav>
+      </div>
+        <!-- chart -->
+
+        <div>
+          <p class="titre text-center text-muted"><b>Rapport</b> : R-TE202303001</p>
+          <div class="container-fluid bg-light" style="text-align: center; margin-left: 13px; margin-top: 13px;border-radius: 10px;">
+            <div class="container-fluid d-flex bg-light m-1" style="text-align: center;">
+           <img class="img p-3" src="images/logo_env.png" alt="" style="height: 200px;width: 300px;">
+            <p class="titre2 p-5 text-muted" style="text-align: center;font-size: 18px; margin-left: 20%;margin-top: 2rem;"><b>Rapport d’analyse (Moteur)</b></p>
+            </div>
+            <div class="container-fluid d-flex bg-light m-1" style="text-align: center; border: 1px solid;">
+              <table class="table table-light " style="font-size: 12px;">
+                <tbody>
+                  <tr>
+                    <th colspan="4" style="text-align: left;height: 5%;line-height: 2%;background-color: #AFEEEE; border: 1px solid;">Information Client</th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Nom du client :</th>
+                    <td style="height: 5%;line-height: 2%;">BOLUDA</td>
+                    <th style="height: 5%;line-height: 2%;">Site de travail :</th>
+                    <td style="height: 5%;line-height: 2%;">ABIDJAN</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Nom du Navire :</th>
+                    <td style="height: 5%;line-height: 2%;">V8 SUPERENZO</td>
+                    <th style="height: 5%;line-height: 2%;">Compartiment :</th>
+                    <td style="height: 5%;line-height: 2%;">MOOTEUR PRINCIPAL BABORD</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Marque :</th>
+                    <td style="height: 5%;line-height: 2%;">CATERPILLAR</td>
+                    <th style="height: 5%;line-height: 2%;">Marque huile :</th>
+                    <td style="height: 5%;line-height: 2%;">PREMIUM</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Numéro de serie :</th>
+                    <td style="height: 5%;line-height: 2%;"></td>
+                    <th style="height: 5%;line-height: 2%;">Grade huile :</th>
+                    <td style="height: 5%;line-height: 2%;">20W50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="container-fluid d-flex bg-light m-1" style="text-align: center; border: 1px solid;">
+              <table class="table table-light m-1 " style="font-size: 12px;">
+                <tbody>
+                  <tr>
+                    <th colspan="5" style="text-align: left;height: 5%;line-height: 2%;background-color: #AFEEEE;">Information Echantillons</th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Code échantillon :</th>
+                    <td style="height: 5%;line-height: 2%;">06-269-0030</td>
+                    <td style="height: 5%;line-height: 2%;">06-196-0014</td>
+                    <td style="height: 5%;line-height: 2%;">06-115-0016</td>
+                    <td style="height: 5%;line-height: 2%;">05-316-0020</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Date de prélèvement :</th>
+                    <td style="height: 5%;line-height: 2%;">01/09/2022</td>
+                    <td style="height: 5%;line-height: 2%;">11/07/2022</td>
+                    <td style="height: 5%;line-height: 2%;">15/04/2022</td>
+                    <td style="height: 5%;line-height: 2%;">18/11/2021</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Date d'analyse :</th>
+                    <td style="height: 5%;line-height: 2%;">28/09/2022</td>
+                    <td style="height: 5%;line-height: 2%;">21/07/2022</td>
+                    <td style="height: 5%;line-height: 2%;">25/04/2022</td>
+                    <td style="height: 5%;line-height: 2%;">18/11/2021</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Compte horaire H :</th>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Age huile H :</th>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Vidange :</th>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Appoint :</th>
+                    <td style="height: 5%;line-height: 2%;">40</td>
+                    <td style="height: 5%;line-height: 2%;">29</td>
+                    <td style="height: 5%;line-height: 2%;">35.7</td>
+                    <td style="height: 5%;line-height: 2%;">127</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left;height: 5%;line-height: 2%;">Filtre changé :</th>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="container-fluid d-flex bg-light m-1" style="text-align: center; border: 1px solid;">
+              <table class="table table-light m-1 " style="font-size: 12px;">
+                <tbody>
+                  <tr style="border: 1px solid;">
+                    <th colspan="1" style="text-align: left;height: 5%;line-height: 2%;background-color: #AFEEEE;">Paramètres</th>
+                    <th colspan="1" style="text-align: left;height: 5%;line-height: 2%;background-color: #AFEEEE;">Méthodes</th>
+                    <th colspan="1" style="text-align: left;height: 5%;line-height: 2%;background-color: #AFEEEE;">Unités</th>
+                    <th colspan="1" style="text-align: left;height: 5%;line-height: 2%;background-color: #AFEEEE;">Limites</th>
+                    <th colspan="4" style="height: 5%;line-height: 2%;background-color: #AFEEEE;">Résultats</th>
+                  </tr>
+                  <tr>
+                    <th colspan="8" style="text-align: left;height: 5%;line-height: 2%;background-color: #c5cabfd9;border: 1px solid;">Metals / Wear / Contaminants / Additives</th>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Aluminium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;border-right: 1px ;"><8/16<</td>
+                    <td style="height: 5%;line-height: 2%;">1.6</td>
+                    <td style="height: 5%;line-height: 2%;">1</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">1.32</td>
+
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Chrome</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><5/25<</td>
+                    <td style="height: 5%;line-height: 2%;">0.2</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0.22</td>
+
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Cuivre</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><15/45<</td>
+                    <td style="height: 5%;line-height: 2%;background-color: red;">178</td>
+                    <td style="height: 5%;line-height: 2%;background-color: red;">204</td>
+                    <td style="height: 5%;line-height: 2%;background-color: red;">141</td>
+                    <td style="height: 5%;line-height: 2%;background-color: red;">288</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Etain</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><15/30<</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0.28</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Fer</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><45/95<</td>
+                    <td style="height: 5%;line-height: 2%;">12.6</td>
+                    <td style="height: 5%;line-height: 2%;">13</td>
+                    <td style="height: 5%;line-height: 2%;">5.43</td>
+                    <td style="height: 5%;line-height: 2%;">10.2</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Nickel</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><5/15<</td>
+                    <td style="height: 5%;line-height: 2%;">1.2</td>
+                    <td style="height: 5%;line-height: 2%;">1</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Chrome</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><25/80<</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">1</td>
+                    <td style="height: 5%;line-height: 2%;">0.80</td>
+                    <td style="height: 5%;line-height: 2%;">0.67</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Silicium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><20/40<</td>
+                    <td style="height: 5%;line-height: 2%;">3.58</td>
+                    <td style="height: 5%;line-height: 2%;">3</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">2.38</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Titan</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><10</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Vadanium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><5</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Argent</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><10</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Cadnium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;"><10</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Sodium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;"></td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;"></td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;"></td>
+                    <td style="height: 5%;line-height: 2%;background-color: red;"></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Calcium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">3577</td>
+                    <td style="height: 5%;line-height: 2%;">2895</td>
+                    <td style="height: 5%;line-height: 2%;">1158</td>
+                    <td style="height: 5%;line-height: 2%;">3220</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Magnesium</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">16.7</td>
+                    <td style="height: 5%;line-height: 2%;">18</td>
+                    <td style="height: 5%;line-height: 2%;">30.4</td>
+                    <td style="height: 5%;line-height: 2%;">162</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Phosphore</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">756</td>
+                    <td style="height: 5%;line-height: 2%;">713</td>
+                    <td style="height: 5%;line-height: 2%;">712</td>
+                    <td style="height: 5%;line-height: 2%;">727</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Zinc</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D5185</td>
+                    <td style="height: 5%;line-height: 2%;">ppm</td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;">808</td>
+                    <td style="height: 5%;line-height: 2%;">588</td>
+                    <td style="height: 5%;line-height: 2%;">596</td>
+                    <td style="height: 5%;line-height: 2%;">753</td>
+                  </tr>
+                  <tr>
+                    <th colspan="8" style="text-align: left;height: 5px;line-height: 1px;background-color: #c5cabfd9;border: 1px solid;">Oil Condition / Particule count</th>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Viscosité à 100°</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D445</td>
+                    <td style="height: 5%;line-height: 2%;">mm2/s</td>
+                    <td style="height: 5%;line-height: 2%;"><12.5/21<</td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;">18.2</td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;">18.1</td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;">17.6</td>
+                    <td style="height: 5%;line-height: 2%;background-color: red;">20.3</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">TBN</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D2896</td>
+                    <td style="height: 5%;line-height: 2%;">mgKOH/g</td>
+                    <td style="height: 5%;line-height: 2%;"></td>
+                    <td style="height: 5%;line-height: 2%;">5.69</td>
+                    <td style="height: 5%;line-height: 2%;">3.21</td>
+                    <td style="height: 5%;line-height: 2%;">4.47</td>
+                    <td style="height: 5%;line-height: 2%;">9</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Point éclair</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM D3828</td>
+                    <td style="height: 5%;line-height: 2%;">°C</td>
+                    <td style="height: 5%;line-height: 2%;">>200</td>
+                    <td style="height: 5%;line-height: 2%;">220</td>
+                    <td style="height: 5%;line-height: 2%;background-color: orange;">182</td>
+                    <td style="height: 5%;line-height: 2%;">218</td>
+                    <td style="height: 5%;line-height: 2%;">220</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Suie</td>
+                    <td style="height: 5%;line-height: 2%;">ASTM E2412</td>
+                    <td style="height: 5%;line-height: 2%;">ufm</td>
+                    <td style="height: 5%;line-height: 2%;"><60</td>
+                    <td style="height: 5%;line-height: 2%;">5.77</td>
+                    <td style="height: 5%;line-height: 2%;">15.1</td>
+                    <td style="height: 5%;line-height: 2%;">0</td>
+                    <td style="height: 5%;line-height: 2%;">16.4</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Eau</td>
+                    <td style="height: 5%;line-height: 2%;">Crackle Test</td>
+                    <td style="height: 5%;line-height: 2%;">%</td>
+                    <td style="height: 5%;line-height: 2%;"></td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;height: 5%;line-height: 2%;">Dilution</td>
+                    <td style="height: 5%;line-height: 2%;"></td>
+                    <td style="height: 5%;line-height: 2%;">-</td>
+                    <td style="height: 5%;line-height: 2%;"></td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                    <td style="height: 5%;line-height: 2%;">N</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+            <div class="container-fluid d-flex bg-light m-1" style="text-align: center;">
+              <div class="table m-1 " style="font-size: 12px;">
+                  <div class="lineaire" style="height: 150px;width: 600px;">
+                    <span class="X"><h1>X</h1></span>
+                  </div>
+                </div>
+              <div class="comm bg-light p-3" style="height: 160px;width: 2300px; font-size: 12px;text-align: left;margin-right: 100px;">
+                <p>Commentaires: Le taux de Cuivre reste très élevé. Le sodium toujours aussi élevé : à suivre. <br>Vérifier ce compartiment et réparer si nécessaire. Voir les causes de présence de Sodium dans <br>l'huile. Changer l'huile et le filtre. Refaire u prélevèment pour contrôle.</p>
+                <br>
+                <br>
+                <p style="font-size: 10px;">Diagnostic établi sous réserve de représentativité de l'échantillon et des informations fournies.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  <script src=" bootstrap /js/ jquery .js"> </script>
+</body>
+
+</html>

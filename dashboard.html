@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/boostrap.min.css">
+  <link href=" bootstrap / css/ bootstrap .min .css" rel="stylesheet ">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid d-flex px-0" id="conteneur">
+      <!-- <div class="container-fluid px-0" id="cont0" style="width: 250px; background-color: green; "> -->
+        <div class="container px-0" style="width: 250px;height: 935px; font-size: 14px;  background-color:white;" id="content1">
+          <!-- col-md-4  -->
+          <div class=" d-flex flex-column align-items-sm-start  text-white"id="side"  style="background-color:white;"id="cont1">
+            <div>
+              <img class=" d-none d-lg-block" src="images/logo_env.png" alt=""
+                style="height: 180px;width: 250px; padding: 0;">
+                <!-- ;margin-right: 2px;margin: 8%;margin-left: -15%; -->
+          </div>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link align-middle px-0 text-dark">
+                  <img src="images/dashboard.png" class="p-3" style="width: 60px;" alt=""><span
+                    class="md-2 d-none d-lg-inline">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="facture.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                  <img src="images/volant.png" class="p-3" style="width: 60px;" alt=""> <span
+                    class="md-2 d-none d-lg-inline">Facture</span> </a>
+              </li>
+              <li>
+                <a href="commande.html" class="nav-link px-0 align-middle text-dark">
+                  <img src="images/taxi.png" class="p-3" style="width: 60px;" alt=""> <span
+                    class="md-2 d-none d-lg-inline">Commande</span></a>
+              </li>
+              <li>
+                <a href="suivi.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                  <img src="images/panier.png" class="p-3" style="width: 60px;" alt=""> <span
+                    class="md-2 d-none d-lg-inline">Suivi</span></a>
+              </li>
+              <li>
+                <a href="serviceclient.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                  <img src="images/message.png" class="p-3" style="width: 60px;" alt=""><span
+                    class="md-2 d-none d-lg-inline">Service Client</span> </a>
+              </li>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <li>
+                <a href="#" class="nav-link px-0 align-middle text-dark">
+                  <img src="images/parametres.png" class="p-3" style="width: 60px;" alt=""><span
+                    class="md-2 d-none d-lg-inline">Paramètres Compte</span> </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0 align-middle text-dark">
+                  <img src="images/deconnexion.png" class="p-3" style="width: 60px;" alt=""><span
+                    class="md-2 d-none d-lg-inline">Déconnexion</span> </a>
+              </li>
+            </ul>
+            <hr>
+
+          </div>
+        </div>
+      <!-- </div> -->
+
+      <!-- nav et chart -->
+      <div class="container-fluid px-0">
+
+        <div class="container-fluid">
+
+       
+          <!-- style="width: 100%;margin-right: 20%;" -->
+          <nav class="navbar navbar-dark bg-light d-flex px-0" style="height: 110px;width:100%; ">
+
+           <a href="#content1">
+            <i class="bi bi-list  d-sm-block d-md-none" style="font-size: 2rem;" id="menu1"></i>
+          </a>
+           
+<!-- script -->
+
+<!-- <script>
+
+let togg1 = document.getElementById("menu1");
+let d2 = document.getElementById("menu");
+let d1 = document.getElementById("content1");
+togg1.addEventListener("click", () => {
+  if((getComputedStyle(d2).display) && (getComputedStyle(d1).display) != "none"){
+    d2.style.display = "none";
+    d1.style.display = "none";
+  } else {
+    d2.style.display = "block";
+    d1.style.display = "block";
+  }
+})
+
+</script> -->
+
+
+<!-- script -->
+
+            <!-- width: 1700px; -->
+            <div class="d-flex" id="right_element" style="margin-right: 5rem;">
+     
+              <img src="images/notificatin.jpg" class="" alt=""
+                style="height: 45px;margin-top: 10px;margin-right: 2rem;">
+              <img src="images/b.png" class="rounded  px-0 m-0" alt="" style="width: 5rem;">
+           
+          </div>
+          </nav>
+        </div>
+
+        <!-- chart -->
+
+        <div>
+          <div class="container-fluid d-flex" style="text-align: center;" id="progress">
+            
+            <div class="row col-md-2 p-2 my-5 mx-3" style="height:360px; width: 15rem; border-radius: 12px; background-color: #008B8B;"
+              id="tab1">
+              <div>
+                <p style="margin-top: -40px;"><b>Analyses Positives</b></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi- bi-lightning text-light mt-4" viewBox="0 0 16 16">
+                  <path
+                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z" />
+                </svg>
+                <p class="Pos h3 p-4 text-center fw-bold text-light">Positif</p>
+                <div class="row d-flex justify-content-center">
+                  <div class="container1 ">
+                    <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                      <linearGradient id="gradient">
+                        <stop class="stop1" offset="0%" />
+                        <stop class="stop2" offset="100%" />
+                      </linearGradient>
+                      <circle class="
+              circle-container__background" r="16" cx="16" cy="16" shape-rendering="geometricPrecision"></circle>
+                      <circle class="circle-container__progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 10"
+                        shape-rendering="geometricPrecision">
+                        <p class="pourcent text-light fs-2 fw-bold" style="margin-top: -110px;">91%</p>
+                      </circle>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 tab -->
+            <div class="row2  p-2 my-5 bg-light" style="height:360px; width: 15rem; border-radius: 12px; margin-left:3rem"
+              id="tab2">
+              <p style="margin-top: -40px;"><b>Analyses Negatives</b></p>
+              <!-- <div> -->
+                <svg viewBox="0 0 1024 1024" class="icon mt-4" version="1.1" xmlns="http://www.w3.org/2000/svg" width="25"
+                  height="25" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z" fill="#E5F1FF"></path>
+                    <path
+                      d="M512 179.2c-96 102.4-262.4 236.8-262.4 384s115.2 262.4 262.4 262.4 262.4-115.2 262.4-262.4-160-281.6-262.4-384z"
+                      fill="#9FC8FE"></path>
+                    <path
+                      d="M512 684.8c-57.6 0-102.4-44.8-102.4-108.8 0-57.6 64-102.4 102.4-147.2 38.4 44.8 102.4 89.6 102.4 147.2 0 57.6-44.8 108.8-102.4 108.8z"
+                      fill="#72AEFD"></path>
+                  </g>
+                </svg>
+                <p class="Pos h3 p-4 text-center fw-bold text-dark">Negatif</p>
+                <div class="row d-flex justify-content-center mt-100">
+                  <div class="container">
+                    <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                      <linearGradient id="gradient1">
+                        <stop class="stop3" offset="0%" />
+                        <stop class="stop4" offset="100%" />
+                      </linearGradient>
+                      <circle class="
+                circle-container__background1" r="16" cx="16" cy="16" shape-rendering="geometricPrecision"></circle>
+                      <circle class="circle-container__progress1" r="16" cx="16" cy="16" style="stroke-dashoffset: 10"
+                        shape-rendering="geometricPrecision">
+                        <p class="pourcent text-dark fs-2 fw-bold" style="margin-top: -110px;">9%</p>
+                      </circle>
+                    </svg>
+                  </div>
+
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="container m-0" style="width: 850px;margin-top: 5px;margin-right: 10px;height: 350px;" id="chart">
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+          <script>
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['JAN', 'FEV', 'MARS', 'AVRIL', 'MAI', 'JUIN', 'JUL', 'AOUT', 'SEPT', 'OCT', 'NOV', 'DEC'],
+                datasets: [{
+                  label: 'Analyses par mois',
+                  data: [09, 07, 13, 06, 10, 05, 07, 10, 10, 10, 10, 10],
+                  borderWidth: 1,
+                  backgroundColor: "white",
+                  barThickness:25,
+                }]
+              },
+              options: {
+                maintainAspectRatio:false,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    display: false,
+                  }
+                }
+              }
+            });
+          </script>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  <script src=" bootstrap /js/ jquery .js"> </script>
+</body>
+
+</html>
