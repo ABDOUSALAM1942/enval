@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/boostrap.min.css">
+    <link href =" bootstrap / css/ bootstrap .min .css" rel="stylesheet ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+ <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+  <div class="container-fluid d-flex px-0">
+   <!-- <div class="container-fluid px-0" id="cont0" style="width: 250px; background-color: green; "> -->
+    <div class="container px-0" style="width: 250px;height: 935px; font-size: 14px;  background-color:white;" id="content1">
+      <!-- col-md-4  -->
+      <div class="d-flex flex-column align-items-sm-start  text-white"id="side"  style="background-color:white;">
+        <div>
+          <img class=" d-none d-lg-block" src="images/logo_env.png" alt=""
+            style="height: 180px;width: 250px; padding: 0;">
+            <!-- ;margin-right: 2px;margin: 8%;margin-left: -15%; -->
+      </div>
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link align-middle px-0 text-dark">
+              <img src="images/dashboard.png" class="p-3" style="width: 60px;" alt=""><span
+                class="md-2 d-none d-lg-inline">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="facture.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+              <img src="images/volant.png" class="p-3" style="width: 60px;" alt=""> <span
+                class="md-2 d-none d-lg-inline">Facture</span> </a>
+          </li>
+          <li>
+            <a href="commande.html" class="nav-link px-0 align-middle text-dark">
+              <img src="images/taxi.png" class="p-3" style="width: 60px;" alt=""> <span
+                class="md-2 d-none d-lg-inline">Commande</span></a>
+          </li>
+          <li>
+            <a href="suivi.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+              <img src="images/panier.png" class="p-3" style="width: 60px;" alt=""> <span
+                class="md-2 d-none d-lg-inline">Suivi</span></a>
+          </li>
+          <li>
+            <a href="serviceclient.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+              <img src="images/message.png" class="p-3" style="width: 60px;" alt=""><span
+                class="md-2 d-none d-lg-inline">Service Client</span> </a>
+          </li>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <li>
+            <a href="#" class="nav-link px-0 align-middle text-dark">
+              <img src="images/parametres.png" class="p-3" style="width: 60px;" alt=""><span
+                class="md-2 d-none d-lg-inline">Paramètres Compte</span> </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-0 align-middle text-dark">
+              <img src="images/deconnexion.png" class="p-3" style="width: 60px;" alt=""><span
+                class="md-2 d-none d-lg-inline">Déconnexion</span> </a>
+          </li>
+        </ul>
+        <hr>
+
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <!-- nav et chart -->
+  <div class="container-fluid px-0">
+
+    <div class="container-fluid">
+
+   
+      <!-- style="width: 100%;margin-right: 20%;" -->
+      <nav class="navbar navbar-dark bg-light d-flex px-0" style="height: 110px;width:100%; ">
+        <a href="#content1">
+          <i class="bi bi-list  d-sm-block d-md-none" style="font-size: 2rem;" id="menu1"></i>
+        </a>
+          
+           
+<!-- script -->
+
+<!-- <script>
+
+let togg1 = document.getElementById("menu1");
+let d2 = document.getElementById("menu");
+let d1 = document.getElementById("content1");
+togg1.addEventListener("click", () => {
+  if((getComputedStyle(d2).display) && (getComputedStyle(d1).display) != "none"){
+    d2.style.display = "none";
+    d1.style.display = "none";
+  } else {
+    d2.style.display = "block";
+    d1.style.display = "block";
+  }
+})
+
+</script> -->
+
+
+<!-- script -->
+        <!-- width: 1700px; -->
+        <div class="d-flex" id="right_element" style="margin-right: 5rem;">
+ 
+          <img src="images/notificatin.jpg" class="" alt=""
+            style="height: 45px;margin-top: 10px;margin-right: 2rem;">
+          <img src="images/b.png" class="rounded  px-0 m-0" alt="" style="width: 5rem;">
+       
+      </div>
+      </nav>
+    </div>
+
+
+    <div class="container-fluid bg-light" style="text-align: center; margin-left: 13px; margin-top: 13px;border-radius: 10px;">
+        <table class="table table-hover table-bordered bg-light text-center ">
+        <thead>
+                <tr class="table-light" >
+                  <td colspan="5" class="Fcture text-muted fw-bold fs-4" style="text-align: left;visibility: hidden;" >comande </td> 
+                </tr>
+                <tr class="table-light" >
+                  <td colspan="3" class="Fcture text-muted fw-bold fs-4" style="text-align: left;" >Commande </td> 
+                  <td colspan="2">
+                    <div class="input-group rounded w-25">
+                        <!-- <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" /> -->
+                        <span class="input-group-text border-0 bg-light w-25" id="search-addon">
+                            <i class="bi-search"></i>
+                        </span>
+                      </div>
+                  </td>
+                </tr>
+                    <th class="col-md-2 text-muted">Factures</th>
+                    <th class="lab text-muted">Laboratoire</th>
+                    <th class="col-md-2 text-muted">Date</th>
+                    <th class="stat text-muted">Status</th>
+                    <th class="col-md-3 text-muted">Cliquez pour voir le rapport</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="chiff text-muted text-start">000112</td>
+                    <td class="env text-muted">Enval</td>
+                    <td class="dat text-muted">10/03/2023</td>
+                    <td class="enc  text-danger"> En cours</td>
+                    <td><button type="button" class="btn btn-success">Voir</button></td>
+                </tr>
+                <tr>
+                    <td class="chiff text-muted text-start">000112</td>   
+                    <td></td>   
+                    <td></td>
+                    <td></td>
+                   <td><button type="button" class="btn btn-success">Voir</button></td>
+                </tr>   
+                <tr>  
+                    <td class="chiff text-muted text-start">000112</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-success">Voir</button></td>
+                </tr>
+              <tr>
+                    <td class="chiff text-muted text-start">000112</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-success">Voir</button></td> 
+              </tr>    
+                <tr>
+                 <td class="chiff text-muted text-start">000112</td>
+                  <td></td> 
+                  <td></td>  
+                  <td></td>
+                  <td><button type="button" class="btn btn-success">Voir</button></td>
+              </tr>  
+              <tr>
+                <td class="chiff text-muted text-start">000112</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button type="button" class="btn btn-success">Voir</button></td>
+            </tr>  
+            <tr>
+              <td class="chiff text-muted text-start">000112</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><button type="button" class="btn btn-success">Voir</button></td>
+          </tr>  
+          <tr>
+            <td class="chiff text-muted text-start">000112</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="btn btn-success">Voir</button></td>
+        </tr>    
+        <tr>
+          <td class="chiff text-muted text-start">000112</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button type="button" class="btn btn-success">Voir</button></td>
+      </tr>     
+      <tr>
+        <td class="chiff text-muted text-start">000112</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button type="button" class="btn btn-success">Voir</button></td>
+    </tr>  
+    <tr>
+      <td class="chiff text-muted text-start">000112</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" class="btn btn-success">Voir</button></td>
+  </tr>  
+  <tr>
+    <td class="chiff text-muted text-start">000112</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button type="button" class="btn btn-success">Voir</button></td>
+</tr>  
+<tr>
+  <td class="chiff text-muted text-start">000112</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td><button type="button" class="btn btn-success">Voir</button></td>
+</tr>  
+<tr>
+   
+     
+            </tbody>
+     
+        </table>
+     
+        </div>
+    </div>
+      
+
+  </div>
+
+
+        
+         <script src=" bootstrap /js/ jquery .js"> </script >  
+</body>
+</html>
